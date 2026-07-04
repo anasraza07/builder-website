@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 120px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px 40px;
+  flex-wrap: wrap;
+}
+
+nav ul li.search {
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav ul li.search:hover {
+  color: #f0b943;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a:visited {
+  color: #fbb701;
+}
+
+section.hero {
+  background: url("https://nimraumer-dev.github.io/Hackathon-Project-Real-state-Website-UI/img/other/bg_5.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero .content {
+  max-width: 612px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-inline: 12px;
+}
+
+.hero .content > span {
+  text-transform: uppercase;
+  color: #fbb701;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.hero .content h1 {
+  word-spacing: 2px;
+  font-size: 52px;
+}
+
+span.dream {
+  background-color: #f0b943;
+  padding: 12px 8px;
+  display: inline-block;
+}
+
+.hero p {
+  color: #8d8c8a;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero .content button {
+  text-transform: uppercase;
+  color: #f0b943;
+  background-color: black;
+  border-radius: 100px;
+  border: 2px solid #f0b943;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+section.services {
+  padding: 0 300px;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 140px;
+}
+
+.heading-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.heading-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.heading-content span {
+  height: 4px;
+  background-color: #fbb701;
+  width: 48px;
+  display: inline-block;
+}
+
+.heading-content p {
+  color: #5f5d5a;
+  word-spacing: 8px;
+  font-size: 18px;
+}
+
+.services .cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.services .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  border: 1px solid #e6e8ea;
+  padding: 40px 24px;
+  border-radius: 4px;
+}
+
+.services .cards .card:hover {
+  box-shadow: none;
+}
+
+.services .cards .card p {
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+}
+
+.projects-container img {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero .content {
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    padding: 16px 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
